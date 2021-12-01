@@ -1,1 +1,7 @@
 chess==1.6.1
+import-ipynb==0.1.3
+random
+signal
+itertools
+chess.svg
+IPython.display
