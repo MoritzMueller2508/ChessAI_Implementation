@@ -111,6 +111,15 @@ Anaconda does not provide the necessary modules, so
 
 __does not work!__
   
+  
+__2. Download the Gaviota endgame library__
+Due to the size of the Gaviota-endgame-library, we can not upload these files to git - or we haven't found out how to do this yet.
+However, it is very simple to include the endgame-library. Please download the [library files](https://drive.google.com/file/d/1ZDuEx8Tl6u6Rcy7wasMSwe9ysEGwSF8U/view?usp=sharing).  
+After that, unzip the package into the 'Resources' folder (ChessAI_Implementation/Resources).  
+
+Please note, that the endgame-libary consists out of 6.54GB, so it may take some time to download the files depending on your internet connection.  
+
+Continue to start a game.
     
 
 __2. Start a game__  
