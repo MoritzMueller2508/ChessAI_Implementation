@@ -111,9 +111,16 @@ Anaconda does not provide the necessary modules, so
 
 __does not work!__
   
+  
+__2. Download the Gaviota endgame tablebase__
+Due to the size of the Gaviota endgame tablebase, these files cannot be uploaded to GitHub.
+However, it is very simple to include the endgame tablebase. Please download the [library files](https://drive.google.com/file/d/1ZDuEx8Tl6u6Rcy7wasMSwe9ysEGwSF8U/view?usp=sharing).  
+After that, unzip the package into the 'Resources' folder (ChessAI_Implementation/Resources). There should now be a folder called "Gaviota" in Resources, which contains .gtb.cp4 files for the endgame tablebase.  
+
+Please note that the endgame tablebase takes up 6.54GB, so it may take some time to download the files depending on your Internet connection.
     
 
-__2. Start a game__  
+__3. Start a game__  
 After the Python environment is ready, simply head over to __Test.ipynb__ to start a game of chess. Either run the Notebook to execute all pre-made tests, or create your own game by creating a Game object:
 
     game = Game.Game(...)
