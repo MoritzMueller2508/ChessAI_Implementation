@@ -123,9 +123,56 @@ Please note that the endgame tablebase takes up 6.54GB, so it may take some time
 __3. Start a game__  
 After the Python environment is ready, simply head over to __Test.ipynb__ to start a game of chess. Either run the Notebook to execute all pre-made tests, or create your own game by creating a Game object:
 
-    game = Game.Game(...)
+    game = Game.Game(params*)
 
-and fill in your desired parameters, which are described in the Notebook itself. After that, use game.play() to start the game.  
+A game can be initialized with different algorithms as well as parameters. The algorithms which can be choosen are:
+1. make_random_move
+2. make_move_minimax
+3. make_move_minimax_memoization
+4. make_move_alphabeta
+5. make_move_alphabeta_progressive_deepening
+
+The Game class can be initialized with different parameters:
+
+``make_move_algorithm_white (Callable, default: None)``  
+Here you can choose between above mentioned algorithms
+  
+``make_move_algorithm_black (Callable, default: None)``  
+Here you can choose between above mentioned algorithms
+
+``search_depth_white (int, default: 3)``  
+This is the search-depth for the make_move_white algorithm. If the make_random_move algorithm is chosen for white, this parameter is not used.
+
+``search_depth_black (int, default: 3)``  
+This is the search-depth for the make_move_black algorithm. If the make_random_move algorithm is chosen for black, this parameter is not used.
+
+``opening_book (str, default: 'Resources/baron30.bin)``     
+The path to the desired opening book the AIs will use, or None if no opening book is desired.
+
+``endgame_tablebase_dir (str, default: 'Resources/Gaviota')``     
+The path to the directory of the desired endgame tablebase the AIs will use, or None if no endgame tablebase is desired. 
 
 
-Have fun!
+
+>__After that, use game.play() to start the game.__ 
+
+However, game.play(params*) can be specified by certain parameters as well.
+
+``debug (bool, default: False)``  
+Indicates, whether the game is started in 'debug-mode' or 'normal-mode'. In debug-mode, further information is tracked. In normal mode, a typical game of chess is started.
+
+``chess_problem (str, default: None)``  
+The name of the chess-problem which should be executed. None if no chess_problem is given.
+
+``automation (bool, default: True)``  
+Whether or not the user has to press a button to get to the next board-state. This should always be true if more than one problem is executed. Furthermore, if automation = False, further information about the last move is given in the output.
+
+``search_depth_auto (bool)``  
+Whether or not the max iteration should be evaluated with default max iteration 3, or ideal max iteration defined in Globals.
+
+
+In addition to that, a "normal game of chess" with the two algorithm make_move_minimax and make_move_alphabeta is defined in the Test.ipynb Notebook, which can be executed to see a quick game of chess. Here, the default values for the rest of the possible parameters are used.
+
+
+
+>Have fun!
