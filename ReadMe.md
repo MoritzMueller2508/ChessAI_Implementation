@@ -29,7 +29,7 @@ This library should also be used as the GUI. The program should be developed as 
 
 ## Section 2: Order of Python Notebooks
 
-In order to use the program, only the "Test.ipynb" notebook needs to be run. However, if one wants to take a closer look at the implemented algorithms and functionality, the order for reading should be:
+In order to use the program, only the "Play.ipynb" notebook needs to be run. However, if one wants to take a closer look at the implemented algorithms and functionality, the order for reading should be:
 
 1. __Globals.ipynb__
 2. __Game.ipynb__
@@ -38,6 +38,7 @@ In order to use the program, only the "Test.ipynb" notebook needs to be run. How
 5. __MinimaxAlgorithm.ipynb__
 6. __AlphaBetaAlgorithm.ipynb__
 7. __Test.ipynb__
+8. __Play.ipynb__
 
 ---
 
@@ -86,11 +87,16 @@ Alpha-beta pruning follows the same general idea as minimax. In addition, it cut
 ---
 
 ### _Section 4.7: Test.ipynb_
-__Test.ipynb__ is the Notebook that tests the algorithms. It evaluates algorithms using two types of tests:
+__Test.ipynb__ is the notebook that tests the algorithms. It evaluates algorithms using two types of tests:
 1. Performance and effectiveness tests by putting two algorithms up against each other. The winner is registered as well as the amount of time the algorithms took to make their moves.
 2. Chess problems that the most effective algorithm must solve. These tests can be seen as unit tests.
 
 Further tests should be added when new algorithms or functionality is implemented.
+
+---
+
+### _Section 4.8: Play.ipynb_
+__Play.ipynb__ is a simple notebook that lets the user play a game of chess against the current most sophisticated algorithm.
 
 ---
 
@@ -121,7 +127,11 @@ Please note that the endgame tablebase takes up 6.54GB, so it may take some time
     
 
 __3. Start a game__  
-After the Python environment is ready, simply head over to __Test.ipynb__ to start a game of chess. Either run the Notebook to execute all pre-made tests, or create your own game by creating a Game object:
+After the Python environment is ready, simply head over to __Play.ipynb__ to play a game of chess against the current most sophisticated algorithm.
+
+Alternatively, run __Test.ipynb__ to execute all pre-made tests.
+
+You can also create your own game by creating a Game object:
 
     game = Game.Game(params*)
 
