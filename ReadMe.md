@@ -9,7 +9,7 @@ In the following, the original task given to us by professor [__Karl Stroetmann_
 
 ---
 
-## Section 1: Task - Development of a chess AI
+## Section 2: Task - Development of a chess AI
 
 Chess is the most popular board game in the western world. The goal of this project is to develop a chess AI. In this project, one must implement the evaluation function described at
 
@@ -27,7 +27,7 @@ This library should also be used as the GUI. The program should be developed as 
 
 ---
 
-## Section 2: Order of Python Notebooks
+## Section 3: Order of Python Notebooks
 
 In order to use the program, only the "Play.ipynb" notebook needs to be run. However, if one wants to take a closer look at the implemented algorithms and functionality, the order for reading should be:
 
@@ -42,7 +42,7 @@ In order to use the program, only the "Play.ipynb" notebook needs to be run. How
 
 ---
 
-## Section 3: Summary of each Notebook
+## Section 4: Summary of each Notebook
 
 In the following, each Python Notebook will be briefly described. This should give a general understanding about the structure and content of each Notebook.
 
