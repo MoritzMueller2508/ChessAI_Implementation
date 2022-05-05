@@ -1,0 +1,23 @@
+move_white, move_black | score_white, score_black | endgameUsed?_white , endgameUsed?_black 
+1. e2e3 , g8f6 | None , 50 | False , False;
+2. b1a3 , e7e5 | None , 45 | False , False;
+3. g2g3 , f8c5 | None , 75 | False , False;
+4. h2h4 , b8c6 | None , 105 | False , False;
+5. f1d3 , e5e4 | None , 245 | False , False;
+6. d3c4 , d7d5 | None , 280 | False , False;
+7. f2f3 , c5a3 | None , 295 | False , False;
+8. f3f4 , c8g4 | None , 285 | False , False;
+9. e1f1 , g4d1 | None , 880 | False , False;
+10. g1f3 , d1f3 | None , 485 | False , False;
+11. f4f5 , f3h1 | None , 470 | False , False;
+12. c4a6 , a3b2 | None , 90 | False , False;
+13. a6e2 , b2a1 | None , 490 | False , False;
+14. e2d3 , e4d3 | None , 275 | False , False;
+15. c1a3 , d3c2 | None , 150 | False , False;
+16. a3c1 , a1b2 | None , 300 | False , False;
+17. f1g1 , h1e4 | None , 310 | False , False;
+18. g1f1 , b2c1 | None , 400 | False , False;
+19. f1g1 , c1d2 | None , 845 | False , False;
+20. a2a4 , c2c1q | None , 9999998 | False , False;
+21. g1h2 , c1h1 | None , 10000000 | False , False;
+Outcome(termination=<Termination.CHECKMATE: 1>, winner=False)
